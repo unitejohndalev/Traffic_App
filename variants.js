@@ -58,10 +58,10 @@ export const girlAnim = {
 };
 
 export const heroTruckAnim = {
-  initial: { x: -700 },
+  initial: { x: -750 },
   animate: {
     x: 0,
-    transition: { type: 'spring', duration: 3 },
+    transition: { type: 'spring', duration: 1.5 },
   },
 };
 
