@@ -49,10 +49,17 @@ const Header = ({ headerData, navData }) => {
       <div className="hidden lg:flex gap-x-[96px]">
         <Nav navData={navData} header={header} />
         {/* btn */}
-        <button className="btn">{btnText}</button>
+        <button className="btn">
+          <Link href="#footer" legacyBehavior>
+            <a>{btnText}</a>
+          </Link>
+        </button>
       </div>
       {/* nav menu button - hide on Large screens */}
-      <div onClick={() => setNavMobile(!navMobile)} className="lg:hidden cursor-pointer">
+      <div
+        onClick={() => setNavMobile(!navMobile)}
+        className="lg:hidden cursor-pointer"
+      >
         <HiMenu className="text-4xl text-accent-hover" />
       </div>
       {/* nav mobile - hide on Large screens */}

@@ -1,3 +1,5 @@
+
+
 {
   "headerData": {
     "logoImgV1": "/images/header/logoV1.svg",
@@ -6,9 +8,9 @@
   },
 
   "navData": [
-    { "name": "About", "href": "/" },
-    { "name": "How to", "href": "/" },
-    { "name": "Faqs", "href": "/" }
+    { "name": "About", "href": "#about" },
+    { "name": "How to", "href": "#how" },
+    { "name": "Faqs", "href": "#faq" }
   ],
 
   "heroData": {
@@ -142,4 +144,6 @@
       "btnText": "Get Started"
     }
   }
+
+  
 }

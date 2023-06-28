@@ -16,7 +16,7 @@ import {
 } from "../variants";
 
 //import icons
-import { CgArrowLongRight} from 'react-icons/cg'
+import { CgArrowLongRight } from "react-icons/cg";
 
 const Hero = ({ heroData, headerData, navData }) => {
   //destructure data
@@ -35,7 +35,7 @@ const Hero = ({ heroData, headerData, navData }) => {
       >
         {/* header */}
         <motion.div variants={fadeInDown}>
-          <Header  navData={navData} headerData={headerData} />
+          <Header navData={navData} headerData={headerData} />
         </motion.div>
         {/* title */}
         <motion.h1
@@ -53,21 +53,26 @@ const Hero = ({ heroData, headerData, navData }) => {
           className="btn"
         >
           {btnText}
-          <CgArrowLongRight className="text-[30px]"/>
+          <CgArrowLongRight className="text-[30px]" />
         </motion.button>
         {/* girl image */}
         <motion.div
-        variants={girlAnim}
-         className="hidden lg:flex absolute bottom-0">
+          variants={girlAnim}
+          className="hidden lg:flex absolute bottom-0"
+        >
           <Image src={girlImg} alt="girlImage" width={206} height={495} />
         </motion.div>
         {/* truck image */}
         <motion.div
-        variants={heroTruckAnim} className="hidden lg:flex absolute -bottom-[25%] -left-[30%]">
+          variants={heroTruckAnim}
+          className="hidden lg:flex absolute -bottom-[25%] -left-[30%]"
+        >
           <Image alt="truckImage" src={truckImg} width={811} height={395} />
         </motion.div>
         <motion.div
-        variants={boyAnim} className="hidden lg:flex absolute  right-[380px] bottom-0 z-10">
+          variants={boyAnim}
+          className="hidden lg:flex absolute  right-[380px] bottom-0 z-10"
+        >
           <Image alt="boyImage" src={boyImg} width={206} height={495} />
         </motion.div>
       </motion.div>

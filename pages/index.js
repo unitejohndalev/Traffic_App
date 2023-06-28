@@ -16,8 +16,8 @@ import {
   aboutData,
   howData,
   testimonialData,
-  footerData
-} from '../data.json'
+  footerData,
+} from "../data.json";
 
 const Home = ({
   headerData,
@@ -27,7 +27,9 @@ const Home = ({
   aboutData,
   howData,
   testimonialData,
-  footerData }) => {
+  footerData,
+
+}) => {
   return (
     <div className="overflow-hidden max-w-[100em] mx-auto bg-page">
       <Hero heroData={heroData} headerData={headerData} navData={navData} />
@@ -35,9 +37,8 @@ const Home = ({
       <How howData={howData} />
       <Faq faqData={faqData} />
       <Testimonials testimonialData={testimonialData} />
-      <Footer footerData={footerData} />
-      <Copyright />
-      <div className="h-[2000px]"></div>
+      <Footer footerData={footerData}/>
+      <Copyright footerData={footerData}/>
     </div>
   );
 };
@@ -53,11 +54,10 @@ export const getStaticProps = async () => {
       aboutData,
       howData,
       testimonialData,
-      footerData
-    }
-  }
-
-}
-
+      footerData,
+  
+    },
+  };
+};
 
 export default Home;

@@ -11,8 +11,9 @@ const NavMobile = ({ navData }) => {
           const { name, href } = item;
           return (
             <li key={index}>
+              {/* legacyBehavior prevents error when <a></a> is assigned as child in Link */}
               <Link href={href} legacyBehavior>
-              <a className="text-white hover:text-accent">{name}</a>
+                <a className="text-white hover:text-accent">{name}</a>
               </Link>
             </li>
           );
