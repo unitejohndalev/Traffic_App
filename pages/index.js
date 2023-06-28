@@ -7,6 +7,9 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 
+//import Head to add title or icon
+import Head from "next/head";
+
 // import data
 import {
   headerData,
@@ -31,15 +34,21 @@ const Home = ({
 
 }) => {
   return (
-    <div className="overflow-hidden max-w-[100em] mx-auto bg-page">
-      <Hero heroData={heroData} headerData={headerData} navData={navData} />
-      <About aboutData={aboutData} />
-      <How howData={howData} />
-      <Faq faqData={faqData} />
-      <Testimonials testimonialData={testimonialData} />
-      <Footer footerData={footerData}/>
-      <Copyright footerData={footerData}/>
-    </div>
+    <>
+      <Head>
+        <title key="title">MyTrafico.</title>
+        <link rel="icon" href="/traffico.png" />
+      </Head>
+      <div className="overflow-hidden max-w-[100em] mx-auto bg-page">
+        <Hero heroData={heroData} headerData={headerData} navData={navData} />
+        <About aboutData={aboutData} />
+        <How howData={howData} />
+        <Faq faqData={faqData} />
+        <Testimonials testimonialData={testimonialData} />
+        <Footer footerData={footerData} />
+        <Copyright footerData={footerData} />
+      </div>
+    </>
   );
 };
 
