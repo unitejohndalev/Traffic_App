@@ -1,6 +1,6 @@
 
 
-#React/Tailwind
+#Reactjs/Nextjs/Tailwind
 
 App Link: https://trafico-app-tan.vercel.app/
 
